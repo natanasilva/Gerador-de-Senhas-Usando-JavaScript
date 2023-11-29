@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background: #b147d6;
+    background: linear-gradient(180deg,#b147d6 15%, #00ff00 150%);
+    background: -webkit-linear-gradient(180deg,#b147d6 15%, #00ff00 150%);
+    background: -moz-linear-gradient(180deg,#b147d6 15%, #00ff00 150%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.conteudo{
+    max-width: 800px;
+    margin-top: 10px;
+    padding: 15px;
+}
+.logo{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nomesite{
+    color: black;
+    text-align: center;
+    text-shadow: 3px 5px 6px rgba(5,84,113,0.6);
+    font-size: 3em;
+}
+img{
+    width: 150px;
+    border-radius: 100px;
+}
+.botoes{
+    text-align: center;
+}
+button{
+    text-decoration: none;
+    outline: none;
+    margin-top: 15px;
+    background-color: blue;
+    border-radius: 25px;
+    color: azure;
+    padding: 10px;
+    width: 100%;
+    text-transform: uppercase;
+    text-shadow: 5px #000000;
+    cursor: pointer;
+}
+button :hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(23, 110, 110);
+}
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.container-password{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    color: #FFF;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+} 
+.password{
+    height: 60px;
+    background-color: rgba(0,0,0,0.40);
+    border: 1px solid #313131;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.password:hover{
+    transform: scale(1.05);
+    border-color: #FFF;
+}
+.ocultar{
+    display: none;
+}
+.dica{
+    color: #FFF;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    font-size: 16px;
+    border-radius: 6px;
+    background: rgb(15, 15, 15);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+    text-align: center;
+}
+
+.container-password:hover .dica{
+    bottom: 50px;
+    visibility: visible;
+    opacity: 1;
+}
+a:link {
+    color: rgb(0, 0, 0);
+}
+a:hover {
+    color: rgb(29, 24, 75);
+}
+a:visited {
+    color: rgb(0, 0, 0);
+}
